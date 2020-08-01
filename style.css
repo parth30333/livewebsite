@@ -1,0 +1,153 @@
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+ hr {
+   border: dotted #888888 6px;
+   width: 5%;
+   border-bottom: none;/*we can also use border-style property*/
+   margin: 100px auto; /*we can also do the same thing by using <br> tag in html code*/
+ }
+
+h1 {
+  color: #0d7377;
+  font-size: 5.625rem; /*100%=16px & 1em=16px*/
+  margin:50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #0d7377;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;/*we have given padding-bottom to the h1 tag cause it is a block level element and it is recomended to give padding instead of margin to give space for a block level element */
+}
+
+h3 {
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 30%;
+  margin: 40px auto 60px; /*top,left&right,bottom*/
+}
+
+.top-container {
+  background:#30e3ca;
+  position: relative;
+  padding-top: 100px;
+}
+ /*instead of applying position: relative; to image element we apply it to the div element(top-container) so that when we give some gap
+b/w our page and image than not just only the image gets shifted but also other elements are shifted by the same gap */
+
+
+.middle-container {
+  padding: 100px 0;  /*to give space b/w middle&top and middle&bottom container respectively*/
+}
+
+
+.bottom-container {
+  background: #4cd3c2;
+  padding: 30px 0 20px; /*there is some gap b/w page and our footer beacuse of the default css applied by the browser , to resolve it use padding*/
+}
+
+a {
+  margin: 10px 20px;
+  color:#27496d;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: #fff0f5;
+
+}
+
+.copyright {
+  color: #fff0f5;
+  font-size: 0.75rem;
+  padding: 15px 0 2px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 43px;
+  left: 68%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 41%;
+  left: 19%;
+}
+
+
+.skill-row { /*this is a div for skill-row which is the child of <div class="skills">*/
+  width: 50%;
+  margin: 100px auto 100px auto;
+  /*text-align:center; humne use kiya "body" m or body k liye ye vaala div(<div class="skill-row">) content(text) hai or humne skill-row vaale div
+  ki width change krdi toh uspe text-align:center; kaam nhi karega par-: jo text(content) skill-row  vaale div m hai uski humne width change nhi ki toh
+   uspar text-align:center;    */
+  text-align:left; /*this will override text-align:center; in body */
+}
+
+
+.skill_1-img { /*Ques.Why used margin instead of padding to give space?
+  Ans--:  margin-: space around element , padding-:space b/w element and we have used this class in <img> tag which means we are treating this image
+  a seperate element now to give space around a element we use margin*/
+  width: 40%; /*now it is 40% of 50% of skill-row div which is 100% of skills div*/
+  float: left;
+  margin:0 30px 0 0;
+}
+
+
+.skill_2-img {
+  width: 40%;
+  float: right;
+  margin: 0 0  0 20px;
+}
+/*USE THIS WEBSITE TO KNOW MORE ABOUT FLOAT-:
+https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/*/
+
+
+.btn {
+  background: #32e0c4;
+  background-image: -webkit-linear-gradient(top, #32e0c4, #0a97b0);
+  background-image: -moz-linear-gradient(top, #32e0c4, #0a97b0);
+  background-image: -ms-linear-gradient(top, #32e0c4, #0a97b0);
+  background-image: -o-linear-gradient(top, #32e0c4, #0a97b0);
+  background-image: linear-gradient(to bottom, #32e0c4, #0a97b0);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #086972;
+  background-image: -webkit-linear-gradient(top, #086972, #204051);
+  background-image: -moz-linear-gradient(top, #086972, #204051);
+  background-image: -ms-linear-gradient(top, #086972, #204051);
+  background-image: -o-linear-gradient(top, #086972, #204051);
+  background-image: linear-gradient(to bottom, #086972, #204051);
+  text-decoration: none;
+}
